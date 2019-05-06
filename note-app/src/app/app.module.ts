@@ -23,11 +23,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { NoteCardComponent } from './note-card/note-card.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavbarComponent,
-    NoteCardComponent,
-  ],
+  declarations: [AppComponent, NavbarComponent, NoteCardComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

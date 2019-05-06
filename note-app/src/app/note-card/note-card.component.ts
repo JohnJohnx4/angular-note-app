@@ -28,5 +28,4 @@ export class NoteCardComponent implements OnInit {
   addNotePage() {
     this.router.navigateByUrl('/add');
   }
-
 }

@@ -16,7 +16,7 @@ export class NotesService {
   constructor(private http: HttpClient) {}
 
   /** GET heroes from the server */
-  getNotes(){
+  getNotes() {
     return this.http.get(`${this.ROOT_URL}/api/notes`);
   }
 
