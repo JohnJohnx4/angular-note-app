@@ -1,3 +1,17 @@
-<p>
-  add-notes works!
-</p>
+<app-navbar></app-navbar>
+<mat-card class="example-container">
+  <mat-form-field>
+    <input matInput [(ngModel)]="title" placeholder="Title" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <textarea matInput [(ngModel)]="content" placeholder="Content"></textarea>
+  </mat-form-field>
+
+  <div>
+    <button mat-raised-button (click)="submitNewNote()">Submit Note</button>
+  </div>
+</mat-card>
+<a [routerLink]="['/notes']" routerLinkActive="router-link-active"
+  ><button mat-raised-button>Home</button></a
+>

@@ -19,6 +19,7 @@ export class NoteCardComponent implements OnInit {
   getNotes() {
     this.notesService.getNotes().subscribe(
       (notes: any) => {
+        console.log(notes);
         this.notes = notes.success;
       },
       err => console.log(err)

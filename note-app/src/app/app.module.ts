@@ -16,15 +16,20 @@ import {
   MatButtonModule,
   MatToolbarModule,
   MatSidenavModule,
-  MatListModule
+  MatListModule,
+  MatFormFieldModule,
+  MatSelectModule,
+  MatInputModule
+
 } from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NoteCardComponent } from './note-card/note-card.component';
 import { AddNotesComponent } from './add-notes/add-notes.component';
+import { NotesComponent } from './notes/notes.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, NoteCardComponent, AddNotesComponent],
+  declarations: [AppComponent, NavbarComponent, NoteCardComponent, AddNotesComponent, NotesComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -41,9 +46,12 @@ import { AddNotesComponent } from './add-notes/add-notes.component';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatDialogModule
+    MatDialogModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

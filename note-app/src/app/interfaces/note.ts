@@ -1,9 +1,9 @@
 export interface Note {
   content: string;
-  date: Date;
   title: string;
+  date: Date;
   user: {
-    _id: string;
-    email: string;
+    _id: string,
+    email: string
   };
 }
