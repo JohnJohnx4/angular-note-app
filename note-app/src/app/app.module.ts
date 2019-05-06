@@ -21,9 +21,10 @@ import {
 import { LayoutModule } from '@angular/cdk/layout';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NoteCardComponent } from './note-card/note-card.component';
+import { AddNotesComponent } from './add-notes/add-notes.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, NoteCardComponent],
+  declarations: [AppComponent, NavbarComponent, NoteCardComponent, AddNotesComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
