@@ -21,14 +21,12 @@ import {
 import { LayoutModule } from '@angular/cdk/layout';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NoteCardComponent } from './note-card/note-card.component';
-import { AddNoteComponent } from './add-note/add-note.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     NoteCardComponent,
-    AddNoteComponent
   ],
   imports: [
     BrowserModule,
